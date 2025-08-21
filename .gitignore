@@ -11,3 +11,6 @@ fly2p/sample/img/*.*
 *.pdf
 *.pyc
 *.tif
+# pixi environments
+.pixi/*
+!.pixi/config.toml
