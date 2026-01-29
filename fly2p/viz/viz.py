@@ -57,7 +57,7 @@ def plotShapelyPoly(ax, shapelyPoly, labelStr,col):
     return ax
 
 def plotEllipse(ax, ctr, longax, shortax, ellipseRot,col, alphaval):
-    ellipsepatch = ppatch.Ellipse(ctr, longax, shortax, -ellipseRot, alpha=alphaval, color=col)
+    ellipsepatch = ppatch.Ellipse(ctr, longax, shortax, angle=-ellipseRot, alpha=alphaval, color=col)
     ax.add_patch(ellipsepatch)
     return ax
 

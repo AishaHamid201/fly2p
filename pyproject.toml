@@ -3,7 +3,7 @@ authors = [{name = "AishaHamid201", email = "148481215+AishaHamid201@users.norep
 name = "fly2p"
 requires-python = ">= 3.11"
 version = "0.1.0"
-dependencies = ["scanimage-tiff-reader>=1.4.1.4,<2"]
+dependencies = ["scanimage-tiff-reader>=1.4.1.4,<2", "typing-extensions>=4.8,<5"]
 
 [build-system]
 build-backend = "hatchling.build"
@@ -11,7 +11,7 @@ requires = ["hatchling"]
 
 [tool.pixi.workspace]
 channels = ["conda-forge"]
-platforms = ["osx-arm64"]
+platforms = ["linux-64"]
 
 [tool.pixi.pypi-dependencies]
 fly2p = { path = ".", editable = true }
@@ -21,7 +21,11 @@ fly2p = { path = ".", editable = true }
 [tool.pixi.dependencies]
 napari = ">=0.6.3,<0.7"
 ipywidgets = ">=8.1.7,<9"
-matplotlib = ">=3.10.5,<4"
+matplotlib = "*"
 xarray = ">=2025.7.1,<2026"
 qt = ">=5.15.15,<6"
 pyqt = ">=5.15.11,<6"
+jupyter = ">=1.1.1,<2"
+jupyterlab = ">=4.4.6,<5"
+netcdf4 = ">=1.7.3,<2"
+shapely = ">=2.1.2,<3"
